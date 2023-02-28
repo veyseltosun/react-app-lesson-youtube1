@@ -12,12 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.App {
-  
-  background-color: aliceblue;
-  height: 300px;
-  border-radius: 30px;
-}
+
 input {
   height: 30px;
   border:none;
@@ -40,4 +35,39 @@ h1{
 }
 h3, h2, h4{
   color: burlywood;
+}
+body {
+  background-color: lightblue;
+}
+@media screen and (min-width: 300px) {
+  body {
+      background-color: darkred;
+  }
+  .App{
+  margin: 20px;
+  background-color: aliceblue;
+  height: 300px;
+  border-radius: 30px;
+  }
+}
+@media screen and (min-width: 600px) {
+  body {
+      background-color: darkblue;
+  }
+}
+@media screen and (min-width: 900px) {
+  body {
+      background-color: darkgreen;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+      background-color: darkviolet;
+  }
+  .App {
+    margin: 100px;
+    background-color: aliceblue;
+    height: 300px;
+    border-radius: 30px;
+  }
 }
