@@ -4,9 +4,16 @@ import { useState } from 'react';
 
 function App() {
   const [isim, setIsim] = useState("");
-  const handleChange = (e) => {
-    setIsim(e.target.value);
+  const [errorMessage , setErrorMessage] = useState("");
+
+  const handleChange = (event) => {
+    setIsim(event.target.value);
   }
+  const handleSubmit = (isim) => {
+
+    isim.lenght < 6 ? setErrorMessage("Kullanıcı ismi en az 6 karater olmalırdır.") : 
+   setErrorMessage("");
+  };
 
   return (
     <div className="App">
@@ -18,7 +25,9 @@ function App() {
       onChange={handleChange}
       />
 
-      <button>Giriş</button>
+      <button onClick={() => handleSubmit(isim)}>Giriş</button>
+      <br/>
+      {errorMessage}
       <h2>Giriş yapınız ... </h2>
 
       
