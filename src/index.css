@@ -12,7 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.App {
+  
+  background-color: aliceblue;
+  height: 300px;
+}
 input {
   height: 30px;
   border:none;
@@ -28,4 +32,11 @@ button{
   border:none;
   height: 35px;
   margin-left: 10px;
+}
+
+h1{
+  color:burlywood
+}
+h3, h2, h4{
+  color: burlywood;
 }
