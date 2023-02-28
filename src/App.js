@@ -22,13 +22,14 @@ function App() {
       name='isim'
       placeholder=" Name ...  "
       value={isim}
-      onChange={handleChange}
+      onChange={ handleChange}
       />
 
-      <button onClick={() => handleSubmit(isim)}>Giriş</button>
+      <button onClick={ () => handleSubmit(isim)}>Giriş</button>
       <br/>
       <h3>{errorMessage}</h3>
       <h2>Giriş yapınız ... </h2>
+      <h4>{isim}</h4>
 
       
     </div>
