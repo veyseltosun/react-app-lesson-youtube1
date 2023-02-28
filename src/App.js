@@ -27,9 +27,10 @@ function App() {
 
       <button onClick={ () => handleSubmit(isim)}>Giriş</button>
       <br/>
-      <h3>{errorMessage}</h3>
-      <h2>Giriş yapınız ... </h2>
-      <h4>{isim}</h4>
+      { errorMessage ? <h3>{errorMessage}</h3> : <h2>Giriş yapınız ... </h2>}
+      
+      
+      
 
       
     </div>
