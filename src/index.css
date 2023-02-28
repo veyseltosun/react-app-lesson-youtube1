@@ -16,6 +16,7 @@ code {
   
   background-color: aliceblue;
   height: 300px;
+  border-radius: 30px;
 }
 input {
   height: 30px;
