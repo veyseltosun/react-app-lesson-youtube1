@@ -11,7 +11,7 @@ function App() {
   }
   const handleSubmit = (isim) => {
 
-    isim.lenght < 6 ? setErrorMessage("Kullanıcı ismi en az 6 karater olmalırdır.") : 
+    isim.length < 6 ? setErrorMessage("Kullanıcı ismi en az 6 karater olmalırdır.") : 
    setErrorMessage("");
   };
 
@@ -27,7 +27,7 @@ function App() {
 
       <button onClick={() => handleSubmit(isim)}>Giriş</button>
       <br/>
-      {errorMessage}
+      <h3>{errorMessage}</h3>
       <h2>Giriş yapınız ... </h2>
 
       
