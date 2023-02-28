@@ -32,6 +32,8 @@ function App() {
   return (
     <div className="App">
       <h1>React Dersleri</h1>
+      {entered && setTimeout(() =>{ <h3>Giriş Yapıldı...</h3> }, 2000)}
+      {entered || <h3>Çıkış Yapıldı...</h3>}
       {entered ? (
 
         <>
