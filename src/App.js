@@ -23,7 +23,9 @@ function App() {
       setEntered(true)
     }
 
-    setIsim("")
+    
+
+    
 
   };
 
@@ -33,8 +35,8 @@ function App() {
       {entered ? (
 
         <>
-          <h2>Welcome !!!</h2>
-          <button onClick={() => setEntered(false)}> Çıkış Yap</button>
+          <h2 className='greating'>Welcome {isim} !</h2>
+          <button onClick={() => { setEntered(false); setIsim("")}}> Çıkış Yap</button>
         </>
 
 

@@ -29,6 +29,9 @@ button{
   height: 35px;
   margin-left: 10px;
 }
+.greating{
+ text-transform: capitalize;
+}
 
 h1{
   color:burlywood
