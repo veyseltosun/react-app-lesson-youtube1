@@ -30,19 +30,12 @@ function App() {
 
   };
 
-  useEffect(() => {
-     setTimeout(() => {
-      setMessage1("Giriş Yapıldı ")
-    }, 1000);
-   clearTimeout( () => {
-      setMessage1("")
-    });
-  }, []);
+ 
 
   return (
     <div className="App">
       <h1>React Dersleri</h1>
-      {entered &&  <h3>{message1}</h3> }
+      {entered &&  <h3>Giriş Yapıldı...</h3> }
       {entered || <h3>Çıkış Yapıldı...</h3>}
       {entered ? (
 
