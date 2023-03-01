@@ -1,11 +1,12 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function App() {
   const [isim, setIsim] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [entered, setEntered] = useState(false);
+  const [message1, setMessage1] = useState("");
 
 
   const handleChange = (event) => {
@@ -29,10 +30,19 @@ function App() {
 
   };
 
+  useEffect(() => {
+     setTimeout(() => {
+      setMessage1("Giriş Yapıldı ")
+    }, 1000);
+   clearTimeout( () => {
+      setMessage1("")
+    });
+  }, []);
+
   return (
     <div className="App">
       <h1>React Dersleri</h1>
-      {entered && setTimeout(() =>{ <h3>Giriş Yapıldı...</h3> }, 2000)}
+      {entered &&  <h3>{message1}</h3> }
       {entered || <h3>Çıkış Yapıldı...</h3>}
       {entered ? (
 
